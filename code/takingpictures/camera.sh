@@ -28,4 +28,4 @@ imagename=$foldername
 mkdir -p ../../photos/$foldername
 
 # Burst mode timelapse 
-raspistill -t $totaltime -tl $period -o ../../photos/$foldername/$imagename_%04d.jpg -n -bm -ss $shut -ISO $isosetting -h 600 -w 1024
+raspistill -t $totaltime -tl $period -o ../../photos/staging/$foldername/$imagename_%04d.jpg -n -bm -ss $shut -ISO $isosetting -h 600 -w 1024
