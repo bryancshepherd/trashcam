@@ -1,7 +1,13 @@
 #!/bin/bash
 
+# Date
+dt=`date +"%d-%b-%Y-%H-%M"`
+
+# Unique group id
+randid=`openssl rand -hex 2`
+
 # Group number
-gn=`openssl rand -hex 3`
+gn=${dt}_${randid}
 
 # Shutter speed
 shut=$1
@@ -22,4 +28,4 @@ imagename=$foldername
 mkdir -p ../../photos/$foldername
 
 # Burst mode timelapse 
-raspistill -t $totaltime -tl $period -o ../../photos/$foldername/$imagename_%04d.jpg -n -bm -ss $shut -ISO $isosetting
+raspistill -t $totaltime -tl $period -o ../../photos/$foldername/$imagename_%04d.jpg -n -bm -ss $shut -ISO $isosetting -h 600 -w 1024
