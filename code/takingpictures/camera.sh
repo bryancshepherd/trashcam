@@ -25,7 +25,9 @@ period=$4
 foldername=shut_${shut}_iso_${isosetting}_gn_${gn}
 imagename=$foldername
 
-mkdir -p ../../photos/$foldername
+mkdir -p ../../photos/staging/$foldername
 
 # Burst mode timelapse 
-raspistill -t $totaltime -tl $period -o ../../photos/staging/$foldername/$imagename_%04d.jpg -n -bm -ss $shut -ISO $isosetting -h 600 -w 1024
+raspistill -t $totaltime -tl $period \
+-o ../../photos/staging/$foldername/$imagename_%04d.jpg \
+-n -bm -ss $shut -ISO $isosetting -h 600 -w 1024
