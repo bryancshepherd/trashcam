@@ -8,7 +8,8 @@ cd ~Projects/trashcam/code
 ./camera.sh 300 800 120000 1000
 ```
 
-_**camera.sh parameters**_
+__**camera.sh parameters**__
+
 **First parameter:** Shutter exposure in milliseconds. Longer exposures mean brighter pictures, but with more blur.
 
 **Second parameter:** ISO (sensor sensitivity). Higher values mean brighter pictures, but with more grain. 
