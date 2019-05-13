@@ -8,7 +8,7 @@ cd ~Projects/trashcam/code
 ./camera.sh 300 800 120000 1000
 ```
 
-__**camera.sh parameters**__
+**camera.sh parameters**:
 
 **First parameter:** Shutter exposure in milliseconds. Longer exposures mean brighter pictures, but with more blur.
 
