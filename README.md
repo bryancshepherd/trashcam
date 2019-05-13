@@ -8,14 +8,14 @@ cd ~Projects/trashcam/code
 ./camera.sh 300 800 120000 1000
 ```
 
-### camera.sh parameters
-First parameter: Shutter exposure in milliseconds. Longer exposures mean brighter pictures, but with more blur.
+#### camera.sh parameters
+**First parameter:** Shutter exposure in milliseconds. Longer exposures mean brighter pictures, but with more blur.
 
-Second parameter: ISO (sensor sensitivity). Higher values mean brighter pictures, but with more grain. 
+**Second parameter:** ISO (sensor sensitivity). Higher values mean brighter pictures, but with more grain. 
 
-Third parameter: Total camera time. The total amount of time we want the camera to be active.
+**Third parameter:** Total camera time. The total amount of time we want the camera to be active.
 
-Fourth parameter: Periodicity of photos. The (approximate) amount of time between photos.
+**Fourth parameter:** Periodicity of photos. The (approximate) amount of time between photos.
 
 The total camera time divided by the periodity of the photos is the approximate number of images that will be taken. 
 This will save pictures to the `./photos` directory
