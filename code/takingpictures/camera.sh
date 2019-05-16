@@ -25,10 +25,10 @@ period=$4
 foldername=shut_${shut}_iso_${isosetting}_gn_${gn}
 imagename=${foldername}
 
-mkdir -p ../../photos/staging/${foldername}
+mkdir -p ../../data/staging/photos/${foldername}
 
 # Write the GPS coordinates to a file
-gpspipe -w -o ../../photos/staging/${foldername}/location_data.txt &
+gpspipe -w -o ../../data/staging/location/location_data_${gn}.txt &
 echo 'Started location tracking'
 
 # Burst mode timelapse 
