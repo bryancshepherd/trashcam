@@ -33,7 +33,7 @@ echo 'Started location tracking'
 
 # Burst mode timelapse 
 raspistill -t ${totaltime} -tl ${period} \
--o ../../photos/staging/${foldername}/${imagename}_%04d.jpg \
+-o ../../data/staging/photos/${foldername}/${imagename}_%04d.jpg \
 -n -bm -ss ${shut} -ISO ${isosetting} -h 600 -w 1024
 
 # After the pictures are done, get a few more GPS data 
