@@ -7,3 +7,5 @@ data/*
 # PyCharm files
 .idea/
 
+trashcamenv/
+
