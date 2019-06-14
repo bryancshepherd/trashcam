@@ -49,7 +49,18 @@ Entire process using YOLO - https://www.reddit.com/r/MachineLearning/comments/8p
 
 Image labelling steps - https://youtu.be/Rgpfk6eYxJA?t=1036 (Image labelling process)
 
+### Development notes
+Start the virtual environment:
+```python
+# From the project root
+trashcamenv\Scripts\activate
+
+```
+
 ### Random Notes
 **Go Pro-Based Proof of Concept Approach:**
 
 The GoPro isn't perfect for prototyping because you either have to use the API and write a program to continually take pictures, or use the burst mode. The resolution options are limited in burst mode so from a testing options perspective, the API approach is best. Unfortunately it is slow. That's not a huge deal, but it means the pictures will be less continuous than they would in application. 
+
+**Tensorflow (GPU version) Setup**
+https://www.tensorflow.org/install/gpu
