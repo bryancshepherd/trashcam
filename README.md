@@ -64,3 +64,13 @@ The GoPro isn't perfect for prototyping because you either have to use the API a
 
 **Tensorflow (GPU version) Setup**
 https://www.tensorflow.org/install/gpu
+
+**Tensorflow Object Detection API**
+https://github.com/tensorflow/models/tree/master/research/object_detection
+https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html
+
+**Tensorflow on a RPi**
+https://github.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi
+
+**Installing labelImg**
+https://github.com/tzutalin/labelImg
