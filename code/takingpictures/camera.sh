@@ -19,7 +19,7 @@ isosetting=${2}
 totaltime=${3}
 
 # Periodicity in milliseconds
-period=$4
+period=${4}
 
 # Create path and file names
 foldername=shut_${shut}_iso_${isosetting}_gn_${gn}
