@@ -15,11 +15,11 @@ shut=${1}
 # ISO
 isosetting=${2}
 
-# Total time in milliseconds
-totaltime=${3}
+# Total time in seconds
+let "totaltime=${3} * 1000"
 
-# Periodicity in milliseconds
-period=${4}
+# Periodicity in seconds
+let "period=${4} * 1000"
 
 # Create path and file names
 foldername=shut_${shut}_iso_${isosetting}_gn_${gn}
@@ -34,7 +34,7 @@ echo 'Started location tracking'
 # Burst mode timelapse 
 raspistill -t ${totaltime} -tl ${period} \
 -o ../../data/staging/photos/${foldername}/${imagename}_%04d.jpg \
--n -bm -ss ${shut} -ISO ${isosetting} -h 600 -w 1024
+-n -bm -ss ${shut} -ISO ${isosetting} -h 1024 -w 1024
 
 # After the pictures are done, get a few more GPS data 
 # points then kill gpspipe
