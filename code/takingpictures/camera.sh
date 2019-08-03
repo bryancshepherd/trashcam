@@ -28,10 +28,12 @@ imagename=${foldername}
 mkdir -p ../../data/staging/photos/${foldername}
 
 # Write the GPS coordinates to a file
+echo 'Starting location tracking...'
 gpspipe -w -o ../../data/staging/location/location_data_${gn}.txt &
 echo 'Started location tracking'
 
 # Burst mode timelapse 
+echo 'Taking pictures...'
 raspistill -t ${totaltime} -tl ${period} \
 -o ../../data/staging/photos/${foldername}/${imagename}_%04d.jpg \
 -n -bm -ss ${shut} -ISO ${isosetting} -h 1024 -w 1024
