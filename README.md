@@ -14,11 +14,11 @@ cd ~Projects/trashcam/code
 
 **Second parameter:** ISO (sensor sensitivity). Higher values mean brighter pictures, but with more grain. 
 
-**Third parameter:** Total camera time. The total amount of time we want the camera to be active.
+**Third parameter:** Total camera time. The total amount of time we want the camera to be active in seconds.
 
-**Fourth parameter:** Periodicity of photos. The (approximate) amount of time between photos.
+**Fourth parameter:** Periodicity of photos. The (approximate) amount of time between photos in seconds.
 
-The total camera time divided by the periodity of the photos is the approximate number of images that will be taken. 
+The total camera time divided by the periodicity of the photos is the approximate number of images that will be taken. 
 This will save pictures to the `./photos` directory
 
 ### Show a 200x200px camera preview
@@ -74,3 +74,8 @@ https://github.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-
 
 **Installing labelImg**
 https://github.com/tzutalin/labelImg
+
+**Additional camera and object recognition examples**
+https://github.com/bryancshepherd/chesscam
+https://github.com/bryancshepherd/tensorchess
+
